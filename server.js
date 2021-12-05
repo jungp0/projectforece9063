@@ -6,7 +6,7 @@ const fs = require('fs');
 
 let jdata = JSON.parse(fs.readFileSync('web.json'));
 
-app.use(express.static("public"));
+app.use(express.static("."));
 
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }));
