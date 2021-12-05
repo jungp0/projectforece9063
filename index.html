@@ -8,6 +8,9 @@
         src="https://cdn.dribbble.com/users/1069761/screenshots/14325969/media/c2918e83b85af1c5dfc8bbca737d1d40.png?compress=1&resize=400x300"></img>
     <div>
         <a href="company.html">Company Website</a>
+        <svg width="50px" length="50px">
+            <circle cx="50" cy="50" r="50"/>
+        </svg>
     </div>
     <div>
         <p>It is the history of the company revenue&#128512;</p>
@@ -39,7 +42,7 @@
 <script>
     var data = [];
 
-    var svg = d3.select("svg"),
+    var svg = d3.select("#canvas"),
         margin = 200,
         width = svg.attr("width") - margin,
         height = svg.attr("height") - margin;
